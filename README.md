@@ -1,4 +1,4 @@
-# Custom sharepoint adapter for SAP HANA
+# Custom sharepoint list adapter for SAP HANA
 
 Beta version, for non-production usage only.
 
