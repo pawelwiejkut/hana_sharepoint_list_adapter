@@ -1,5 +1,7 @@
 # Custom sharepoint list adapter for SAP HANA
 
+Support standalone versions only.
+
 Beta version, for non-production usage only.
 
 ## Usefull links:
