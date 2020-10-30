@@ -4,6 +4,11 @@ Support standalone versions only.
 
 Beta version, for non-production usage only.
 
+## Example
+ <img width="1029" alt="Screenshot 2020-10-30 at 08 58 52" src="https://user-images.githubusercontent.com/11619019/97712759-2cf10200-1abf-11eb-9350-80e6a644aba5.png">
+<img width="699" alt="Screenshot 2020-10-30 at 09 12 34" src="https://user-images.githubusercontent.com/11619019/97712689-12b72400-1abf-11eb-9be3-391116088553.png">
+<img width="1020" alt="Screenshot 2020-10-30 at 12 30 14" src="https://user-images.githubusercontent.com/11619019/97712725-21054000-1abf-11eb-9337-dc853092c5d6.png">
+
 ### Usage
 
 1.  Download [latest release](https://github.com/pawelwiejkut/hana_sharepoint_list_adapter/releases).
