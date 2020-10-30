@@ -12,7 +12,7 @@ Beta version, for non-production usage only.
 ## How it works ?
 
 oData standard sharepoint API: https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/working-with-lists-and-list-items-with-rest
-And standard JAVA library to handle NTLM login.
+and standard JAVA library to handle NTLM login.
 
 ### Usage
 
