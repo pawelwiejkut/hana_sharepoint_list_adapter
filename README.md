@@ -1,16 +1,16 @@
-##📊💿 Custom sharepoint list adapter for SAP HANA
+## 📊💿 Custom sharepoint list adapter for SAP HANA
 
 Support standalone versions only.
 
 Beta version, for non-production usage only.
 
-##Usage
+### Usage
 
-1.Download latest release
-2.Deploy the adapter (.jar) to the Data Provisioning Agent
-3.Register the adapter with the SAP HANA server
-4.Enable the adapter in SAP HANA studio (create a new remote source and import tables)
-5.Usefull links:
+1.  Download latest release
+2.  Deploy the adapter (.jar) to the Data Provisioning Agent
+3.  Register the adapter with the SAP HANA server
+4.  Enable the adapter in SAP HANA studio (create a new remote source and import tables)
+5.  Usefull links:
 
 How to create your own: https://pawelwiejkut.net/developing-custom-hana-adapter-quickstart/
 
