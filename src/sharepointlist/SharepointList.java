@@ -6,6 +6,7 @@ package sharepointlist;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -128,7 +129,10 @@ public class SharepointList extends Adapter {
 		 * Lets return a single row with 1, hello user data.
 		 */
 
-		HttpGet httpget = new HttpGet("http://"+ hostName +"/_api/web/lists/GetByTitle('"+listName+"')/items");
+		HttpGet httpget;
+		try {
+			httpget = new HttpGet("http://"+ hostName +"/_api/web/lists/GetByTitle('"+URLEncoder.encode(listName, "UTF-8").replace("+", "%20")+"')/items");
+
 		TableMetadata table = new TableMetadata();
 		try {
 			CloseableHttpResponse response = httpclient.execute(httpget);
@@ -176,6 +180,10 @@ public class SharepointList extends Adapter {
 		} finally {
 
 		}
+		} catch (UnsupportedEncodingException e3) {
+			// TODO Auto-generated catch block
+			e3.printStackTrace();
+		}
 		alreadySent = true;
 	}
 
@@ -214,8 +222,11 @@ public class SharepointList extends Adapter {
 	@Override
 	public Metadata importMetadata(String nodeId) throws AdapterException {
 
-		HttpGet httpget = new HttpGet("http://"+ hostName +"/_api/web/lists/GetByTitle('"+listName+"')/items");
+		HttpGet httpget;
 		TableMetadata table = new TableMetadata();
+		try {
+			httpget = new HttpGet("http://"+ hostName +"/_api/web/lists/GetByTitle('"+URLEncoder.encode(listName, "UTF-8").replace("+", "%20")+"')/items");
+
 		try {
 			CloseableHttpResponse response = httpclient.execute(httpget);
 
@@ -254,15 +265,19 @@ public class SharepointList extends Adapter {
 
 			table.setName(nodeId);
 			table.setColumns(schema);
-
-		} catch (ClientProtocolException e) {
+		
+		
+		}catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		} catch (UnsupportedEncodingException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
 		return table;
 
 	}

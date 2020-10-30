@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: SHAREPOINTLIST
 Bundle-SymbolicName: SHAREPOINTLIST
-Bundle-Version: 1.0.1.qualifier
+Bundle-Version: 0.0.2.qualifier
 Bundle-Activator: sharepointlist.Activator
 Bundle-Vendor: pawelwiejkut
 Require-Bundle: org.apache.log4j;bundle-version="1.2.15"
