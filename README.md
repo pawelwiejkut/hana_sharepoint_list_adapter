@@ -22,6 +22,6 @@ and standard JAVA library to handle NTLM login.
 4.  Enable the adapter in SAP HANA studio (create a new remote source and import tables)
 5.  Usefull links:
 
-How to create your own: https://pawelwiejkut.net/developing-custom-hana-adapter-quickstart/
+How to create your own: https://pawelwiejkut.dev/posts/custom_hana_adapter/
 
 SAP Documentation: https://help.sap.com/doc/PRODUCTION/a886342618b84c7e84b81adce1a1346b/2.0_SPS00/en-US/SAP_HANA_EIM_Adapter_SDK_en.pdf
